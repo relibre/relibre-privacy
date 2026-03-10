@@ -54,7 +54,7 @@ If you live in the European Union or in other places with similar laws (like the
 - Withdraw any consent you gave.
 - Complain to a data protection authority if you think we are breaking the law.
 
-To exercise your rights, please email [info@reLibre.app](mailto:info@reLibre.app).
+To exercise your rights, please email [relibreapp@gmail.com](mailto:relibreapp@gmail.com).
 
 ---
 
@@ -73,7 +73,7 @@ We may update this Privacy Policy if the app changes. When we do, we will post t
 ## 9. Contact us
 
 **RE:LIBRE**
-Email: [info@reLibre.app](mailto:info@reLibre.app)
+Email: [info@reLibre.app](mailto:relibreapp@gmail.com)
 
 ---
 
