@@ -1,0 +1,138 @@
+# RE:LIBRE Privacy Policy
+**Last updated: May 04, 2026**
+
+RE:LIBRE is committed to protecting your privacy. We collect the minimum data necessary to provide our services and never share your information for marketing or advertising purposes.
+
+RE:LIBRE is a free mobile application developed by BetterLifeUs LLC, that helps formerly incarcerated people, folks recovering from drug or alcohol addiction, and refugees find resources where they can listen to guided audio sessions and watch practical videos.
+
+---
+
+## 1. What We Collect
+
+### Data You Provide
+* **Email address:** Required to log in and access your account. Stored encrypted on secure servers.
+* **Access key:** Your unique 8-digit code (issued by a partner organization or purchased by you).
+* **Payment Information (Self-Purchase only):** If you purchase a key directly, your payment is processed by Stripe. We do not store your credit card numbers or bank details on our servers; we only receive confirmation that the payment was successful.
+
+### Data Collected Automatically
+* **Device ID:** A unique identifier for your device, generated automatically. Links your email to your access on this specific device.
+* **Error and crash reports:** Anonymized data sent to Sentry to help fix bugs. Cannot identify you personally.
+* **Performance data:** Basic anonymized metrics via Expo to monitor app health.
+* **Device OS:** Only the operating system type (iOS, Android). Nothing more.
+
+### Data We Do NOT Collect
+* Criminal record, immigration status, or addiction history.
+* Location data — We do not track or request your GPS location.
+* Biometric data — No fingerprints, face recognition, or similar identifiers.
+* Ad targeting identifiers — No IDFA, AAID, or tracking identifiers.
+* Contacts, photos, or health data from your device.
+
+---
+
+## 2. How We Use Your Data
+* **Authentication:** Using your email and key to grant access to the app.
+* **Account linking:** Linking your account to your Device ID to prevent unauthorized sharing.
+* **Transaction Processing:** Using your email to send receipts and access keys after a Stripe purchase.
+* **Communication:** Sending your access key if you use the "Forgot my key?" feature.
+
+---
+
+## 3. Third-Party Services
+* **Supabase (Backend & Database):** Secure storage of your email and key on EU-based servers. GDPR-compliant.
+* **Stripe (Payments):** Handles all financial transactions for self-purchased keys. RE:LIBRE never sees your full card details.
+* **Resend (Email Delivery):** Sends your access keys and account deletion confirmations.
+* **Sentry (Error Tracking):** Anonymized crash reports only. No email, device ID, or identifying information is included.
+* **Expo (App Platform):** Used to build and distribute the app. Anonymized performance metrics only — not linked to your identity.
+* **Apple App Store (Distribution):** Apple handles download and update information according to their own privacy policy. We do not receive your personal data from them.
+
+---
+
+## 4. Data Security and Retention
+* **No Passwords:** Because we don't use passwords, there is no password for hackers to steal.
+* **Encryption:** All data is encrypted during transmission (HTTPS) and at rest.
+* **Retention:**
+    * **Active Accounts:** We keep your email and key as long as your account is active.
+    * **Deleted Accounts:** All data is permanently wiped 7 days after a deletion request is confirmed.
+    * **Financial Records:** Stripe maintains transaction records as required by global tax and anti-fraud laws.
+
+---
+
+## 5. Account Deletion
+You have the "Right to be Forgotten." You can trigger a permanent deletion of your account directly in the app (**Profile -> Delete My Account**).
+
+* **7-Day Grace Period:** Your data is queued for deletion. You can cancel this within 7 days.
+* **Permanent Wipe:** After 7 days, your email, Device ID, and access key are permanently and irreversibly deleted from our system.
+
+### Cancelling a Deletion Request
+You can cancel your deletion request at any time within the 7-day window:
+1. Open RE:LIBRE and go to **Profile**.
+2. Tap **'Cancel Deletion Request'** — this button appears only when a deletion is pending.
+3. Your deletion is cancelled immediately and your account remains active.
+
+### Manual Deletion Request
+If you cannot access the app, you can request deletion by emailing **support@betterlifeus.org** with the subject **'RE:LIBRE - Account Deletion Request'**, including your email address and access key. We will confirm and process within 30 days.
+
+---
+
+## 6. Legal Compliance (Minors)
+RE:LIBRE is not designed for users under 18 years old. We do not knowingly collect data from children under 18. If a parent or guardian discovers that a child under 18 has used the app, please contact us immediately and we will delete all related records.
+
+---
+
+## 7. Your Rights and Data Deletion
+You have the following rights regarding your account:
+* **Access:** Request what data we hold about you.
+* **Deletion:** Request us to delete your data.
+* **Correction:** Request correction of inaccurate data.
+* **Portability:** Receive a copy of your data in a portable format.
+* **Withdraw consent:** Withdraw any consent you previously gave.
+* **Complain:** File a complaint with your local data protection authority.
+
+To exercise these rights, email **support@betterlifeus.org** with your access email and specific request. We will respond within 30 days.
+
+---
+
+## 8. Tracking and Identifiers
+RE:LIBRE does **NOT** use IDFA, AAID, cookies, web beacons, ad tracking, cross-app tracking, or data brokers. We use only functional identifiers (access key and session tokens) necessary to provide the service. These are never used for advertising.
+
+---
+
+## 9. Protection of Sensitive Information
+* We do not store criminal history, addiction status, immigration status, or refugee status.
+* Access keys are random alphanumeric strings — not linked to your identity or demographics.
+* We do not create profiles based on app usage or content preferences.
+* All data about your app use is treated as confidential and will not be disclosed except as required by law.
+
+---
+
+## 10. Changes to This Policy
+We may update this Privacy Policy if the app changes. When we do, we will post the new version and update the 'Last updated' date. Continued use of the app after a change means you accept the new policy.
+
+---
+
+## 11. Contact Us
+**RE:LIBRE**
+Email: **support@betterlifeus.org**
+Please include 'RE:LIBRE - Support' in the subject line. We respond within 30 days.
+
+---
+
+## 12. Legal Compliance
+**United States**
+* COPPA — no data collected from children under 13.
+* CCPA / CPRA — California residents may access, delete, and opt-out of data sales.
+* VCDPA and other applicable state privacy laws.
+* FTC Act Section 5 — reasonable security standards.
+
+**International**
+* GDPR — for EU and UK residents.
+* Danish Data Protection Act (2023).
+* Apple App Store privacy requirements.
+* UN Universal Declaration of Human Rights — Article 12 (right to privacy).
+* UN Refugee Convention — protection of refugees.
+
+---
+
+**RE:LIBRE is a product of BetterLifeUs LLC.**
+Available in English and Danish.
+© 2026 BetterLifeUs LLC. All rights reserved.
