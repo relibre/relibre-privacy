@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RE:LIBRE</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #34495e; margin-top: 30px; font-size: 1.4em; }
+        h3 { color: #555; font-size: 1.1em; margin-top: 20px; }
+        p { margin-bottom: 15px; }
+        ul, ol { margin-bottom: 15px; padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .lang-switch {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #f0f4f8;
+            border-radius: 8px;
+            border: 1px solid #d1d9e6;
+        }
+        .lang-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 1px solid #3498db;
+            background: white;
+            color: #3498db;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .lang-btn:hover {
+            background: #3498db;
+            color: white;
+        }
+        .lang-btn.active {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        .content { display: none; }
+        .content.active { display: block; animation: fadeIn 0.5s; }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+        strong { color: #2c3e50; }
+    </style>
+    <script>
+        function showLang(lang) {
+            // Hide all contents
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+            // Remove active class from buttons
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected content
+            document.getElementById(lang).classList.add('active');
+            // Highlight selected button
+            event.target.classList.add('active');
+        }
+        // Default to English
+        window.onload = function() { 
+            // Set English button as active by default
+            document.querySelector('button[onclick="showLang(\'english\')"]').classList.add('active');
+        };
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switch">
+        <h2>Choose Language / Vælg Sprog</h2>
+        <button class="lang-btn" onclick="showLang('english')">🇬🇧 English</button>
+        <button class="lang-btn" onclick="showLang('danish')">🇩🇰 Dansk</button>
+    </div>
+
+    <!-- ENGLISH CONTENT -->
+    <div id="english" class="content active">
+        <h1>RE:LIBRE Privacy Policy</h1>
+        <p><strong>Last updated: May 04, 2026</strong></p>
+
+        <p>RE:LIBRE is committed to protecting your privacy. We collect the minimum data necessary to provide our services and never share your information for marketing or advertising purposes.</p>
+        <p>RE:LIBRE is a free mobile application developed by BetterLifeUs LLC, that helps formerly incarcerated people, folks recovering from drug or alcohol addiction, and refugees find resources where they can listen to guided audio sessions and watch practical videos.</p>
+        <hr>
+
+        <h2>1. What We Collect</h2>
+        <h3>Data You Provide</h3>
+        <ul>
+            <li><strong>Email address:</strong> Required to log in and access your account. Stored encrypted on secure servers.</li>
+            <li><strong>Access key:</strong> Your unique 8-digit code (issued by a partner organization or purchased by you).</li>
+            <li><strong>Payment Information (Self-Purchase only):</strong> If you purchase a key directly, your payment is processed by Stripe. We do not store your credit card numbers or bank details on our servers; we only receive confirmation that the payment was successful.</li>
+        </ul>
+
+        <h3>Data Collected Automatically</h3>
+        <ul>
+            <li><strong>Device ID:</strong> A unique identifier for your device, generated automatically. Links your email to your access on this specific device.</li>
+            <li><strong>Error and crash reports:</strong> Anonymized data sent to Sentry to help fix bugs. Cannot identify you personally.</li>
+            <li><strong>Performance data:</strong> Basic anonymized metrics via Expo to monitor app health.</li>
+            <li><strong>Device OS:</strong> Only the operating system type (iOS, Android). Nothing more.</li>
+        </ul>
+
+        <h3>Data We Do NOT Collect</h3>
+        <ul>
+            <li>Criminal record, immigration status, or addiction history.</li>
+            <li>Location data — We do not track or request your GPS location.</li>
+            <li>Biometric data — No fingerprints, face recognition, or similar identifiers.</li>
+            <li>Ad targeting identifiers — No IDFA, AAID, or tracking identifiers.</li>
+            <li>Contacts, photos, or health data from your device.</li>
+        </ul>
+
+        <h2>2. How We Use Your Data</h2>
+        <ul>
+            <li><strong>Authentication:</strong> Using your email and key to grant access to the app.</li>
+            <li><strong>Account linking:</strong> Linking your account to your Device ID to prevent unauthorized sharing.</li>
+            <li><strong>Transaction Processing:</strong> Using your email to send receipts and access keys after a Stripe purchase.</li>
+            <li><strong>Communication:</strong> Sending your access key if you use the "Forgot my key?" feature.</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <ul>
+            <li><strong>Supabase (Backend & Database):</strong> Secure storage of your email and key on EU-based servers. GDPR-compliant.</li>
+            <li><strong>Stripe (Payments):</strong> Handles all financial transactions for self-purchased keys. RE:LIBRE never sees your full card details.</li>
+            <li><strong>Resend (Email Delivery):</strong> Sends your access keys and account deletion confirmations.</li>
+            <li><strong>Sentry (Error Tracking):</strong> Anonymized crash reports only. No email, device ID, or identifying information is included.</li>
+            <li><strong>Expo (App Platform):</strong> Used to build and distribute the app. Anonymized performance metrics only — not linked to your identity.</li>
+            <li><strong>Apple App Store (Distribution):</strong> Apple handles download and update information according to their own privacy policy. We do not receive your personal data from them.</li>
+        </ul>
+
+        <h2>4. Data Security and Retention</h2>
+        <ul>
+            <li><strong>No Passwords:</strong> Because we don't use passwords, there is no password for hackers to steal.</li>
+            <li><strong>Encryption:</strong> All data is encrypted during transmission (HTTPS) and at rest.</li>
+            <li><strong>Retention:</strong>
+                <ul>
+                    <li><strong>Active Accounts:</strong> We keep your email and key as long as your account is active.</li>
+                    <li><strong>Deleted Accounts:</strong> All data is permanently wiped 7 days after a deletion request is confirmed.</li>
+                    <li><strong>Financial Records:</strong> Stripe maintains transaction records as required by global tax and anti-fraud laws.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Account Deletion</h2>
+        <p>You have the "Right to be Forgotten." You can trigger a permanent deletion of your account directly in the app (<strong>Profile -> Delete My Account</strong>).</p>
+        <ul>
+            <li><strong>7-Day Grace Period:</strong> Your data is queued for deletion. You can cancel this within 7 days.</li>
+            <li><strong>Permanent Wipe:</strong> After 7 days, your email, Device ID, and access key are permanently and irreversibly deleted from our system.</li>
+        </ul>
+        <h3>Cancelling a Deletion Request</h3>
+        <p>You can cancel your deletion request at any time within the 7-day window:</p>
+        <ol>
+            <li>Open RE:LIBRE and go to <strong>Profile</strong>.</li>
+            <li>Tap <strong>'Cancel Deletion Request'</strong> — this button appears only when a deletion is pending.</li>
+            <li>Your deletion is cancelled immediately and your account remains active.</li>
+        </ol>
+        <h3>Manual Deletion Request</h3>
+        <p>If you cannot access the app, you can request deletion by emailing <strong>support@betterlifeus.org</strong> with the subject <strong>'RE:LIBRE - Account Deletion Request'</strong>, including your email address and access key. We will confirm and process within 30 days.</p>
+
+        <h2>6. Legal Compliance (Minors)</h2>
+        <p>RE:LIBRE is not designed for users under 18 years old. We do not knowingly collect data from children under 18. If a parent or guardian discovers that a child under 18 has used the app, please contact us immediately and we will delete all related records.</p>
+
+        <h2>7. Your Rights and Data Deletion</h2>
+        <p>You have the following rights regarding your account:</p>
+        <ul>
+            <li><strong>Access:</strong> Request what data we hold about you.</li>
+            <li><strong>Deletion:</strong> Request us to delete your data.</li>
+            <li><strong>Correction:</strong> Request correction of inaccurate data.</li>
+            <li><strong>Portability:</strong> Receive a copy of your data in a portable format.</li>
+            <li><strong>Withdraw consent:</strong> Withdraw any consent you previously gave.</li>
+            <li><strong>Complain:</strong> File a complaint with your local data protection authority.</li>
+        </ul>
+        <p>To exercise these rights, email <strong>support@betterlifeus.org</strong> with your access email and specific request. We will respond within 30 days.</p>
+
+        <h2>8. Tracking and Identifiers</h2>
+        <p>RE:LIBRE does <strong>NOT</strong> use IDFA, AAID, cookies, web beacons, ad tracking, cross-app tracking, or data brokers. We use only functional identifiers (access key and session tokens) necessary to provide the service. These are never used for advertising.</p>
+
+        <h2>9. Protection of Sensitive Information</h2>
+        <ul>
+            <li>We do not store criminal history, addiction status, immigration status, or refugee status.</li>
+            <li>Access keys are random alphanumeric strings — not linked to your identity or demographics.</li>
+            <li>We do not create profiles based on app usage or content preferences.</li>
+            <li>All data about your app use is treated as confidential and will not be disclosed except as required by law.</li>
+        </ul>
+
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy if the app changes. When we do, we will post the new version and update the 'Last updated' date. Continued use of the app after a change means you accept the new policy.</p>
+
+        <h2>11. Contact Us</h2>
+        <p><strong>RE:LIBRE</strong><br>
+        Email: <strong>support@betterlifeus.org</strong><br>
+        Please include 'RE:LIBRE - Support' in the subject line. We respond within 30 days.</p>
+
+        <h2>12. Legal Compliance</h2>
+        <h3>United States</h3>
+        <ul>
+            <li>COPPA — no data collected from children under 13.</li>
+            <li>CCPA / CPRA — California residents may access, delete, and opt-out of data sales.</li>
+            <li>VCDPA and other applicable state privacy laws.</li>
+            <li>FTC Act Section 5 — reasonable security standards.</li>
+        </ul>
+        <h3>International</h3>
+        <ul>
+            <li>GDPR — for EU and UK residents.</li>
+            <li>Danish Data Protection Act (2023).</li>
+            <li>Apple App Store privacy requirements.</li>
+            <li>UN Universal Declaration of Human Rights — Article 12 (right to privacy).</li>
+            <li>UN Refugee Convention — protection of refugees.</li>
+        </ul>
+
+        <div class="footer">
+            <p><strong>RE:LIBRE is a product of BetterLifeUs LLC.</strong><br>
+            Available in English and Danish.<br>
+            © 2026 BetterLifeUs LLC. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- DANISH CONTENT -->
+    <div id="danish" class="content">
+        <h1>RE:LIBRE Privatlivspolitik</h1>
+        <p><strong>Senest opdateret den 04. Maj 2026</strong></p>
+
+        <p>RE:LIBRE er forpligtet til at beskytte dit privatliv. Vi indsamler kun de data, der er nødvendige for at levere vores tjenester, og deler aldrig dine oplysninger til markedsføring eller reklamer.</p>
+
+        <p>RE:LIBRE er en gratis mobil app udviklet af <strong>BetterLifeUs LLC</strong>, der hjælper tidligere fængslede personer, folk på vej ud af narkomisbrug eller alkoholafhængighed samt flygtninge med at finde ressourcer, hvor de kan lytte til guidede lydsessioner og se praktiske videoer.</p>
+        <hr>
+
+        <h2>1. Hvad indsamler vi?</h2>
+
+        <h3>Data, du angiver</h3>
+        <ul>
+            <li><strong>E-mailadresse:</strong> Påkrævet for at logge ind og tilgå din konto. Gemmes krypteret på sikre servere.</li>
+            <li><strong>Adgangsnøgle:</strong> Din unikke 8-cifrede kode (udstedt af en partnerorganisation eller købt af dig).</li>
+            <li><strong>Betalingsoplysninger (kun ved selvkøb):</strong> Hvis du køber en nøgle direkte, behandles betalingen af en sikker betalingspartner (Stripe). Vi gemmer ikke dine kreditkortnumre eller bankoplysninger på vores servere; vi modtager kun bekræftelse på, at betalingen er gennemført.</li>
+        </ul>
+
+        <h3>Data, der indsamles automatisk</h3>
+        <ul>
+            <li><strong>Enheds-ID:</strong> En unik identifikator for din enhed, genereret automatisk. Forbinder din e-mail med din adgang på denne specifikke enhed.</li>
+            <li><strong>Fejl- og nedbrudsrapporter:</strong> Anonymiserede data sendt til Sentry for at hjælpe med at rette fejl. Kan ikke identificere dig personligt.</li>
+            <li><strong>Ydeevne-data:</strong> Grundlæggende anonymiserede målinger via Expo for at overvåge appens sundhed.</li>
+            <li><strong>Enheds-OS:</strong> Kun operativsystemstype (iOS, Android). Intet mere.</li>
+        </ul>
+
+        <h3>Data, vi IKKE indsamler</h3>
+        <ul>
+            <li>Straffeattest, opholdsstatus eller afhængighedshistorik.</li>
+            <li>Lokationsdata (vi sporer eller anmoder ikke om din GPS-placering).</li>
+            <li>Biometriske data (ingen fingeraftryk, ansigtsgenkendelse eller lignende).</li>
+            <li>Annonce-målretnings-ID’er (ingen IDFA, AAID eller sporingsidentifikatorer).</li>
+            <li>Kontakter, fotos eller sundhedsdata fra din enhed.</li>
+        </ul>
+
+        <h2>2. Hvordan vi bruger dine data</h2>
+        <ul>
+            <li><strong>Autentifikation:</strong> Vi bruger din e-mail og nøgle til at give dig adgang til appen.</li>
+            <li><strong>Kontolink:</strong> Vi knytter din konto til dit enheds-ID for at forhindre uautoriseret deling.</li>
+            <li><strong>Transaktionsbehandling:</strong> Brug af din e-mail til at sende kvitteringer og adgangsnøgler efter et Stripe-køb.</li>
+            <li><strong>Kommunikation:</strong> Vi bruger din e-mail til at sende din adgangsnøgle, hvis du benytter "Glemt min nøgle?"-funktionen.</li>
+        </ul>
+
+        <h2>3. Tredjepartsydelser</h2>
+        <ul>
+            <li><strong>Supabase (Backend & Database):</strong> Sikker opbevaring af din e-mail og nøgle på EU-baserede servere. Overholder GDPR.</li>
+            <li><strong>Stripe (Betalingsbehandling):</strong> Håndterer alle finansielle transaktioner for selvkøbte nøgler. RE:LIBRE ser aldrig dine fulde kortoplysninger.</li>
+            <li><strong>Resend (E-mail-levering):</strong> Sender dine adgangsnøgler og bekræftelser på kontosletning.</li>
+            <li><strong>Sentry (Fejlsporing):</strong> Kun anonymiserede nedbrudsrapporter. Ingen e-mail eller enheds-ID medsendes.</li>
+            <li><strong>Expo (App-platform):</strong> Bruges til at bygge og distribuere appen. Kun anonymiserede ydeevne-målinger.</li>
+            <li><strong>Apple App Store (Distribution):</strong> Apple håndterer download- og opdateringsoplysninger i henhold til deres egen privatlivspolitik.</li>
+        </ul>
+
+        <h2>4. Databeskyttelse og opbevaring</h2>
+        <ul>
+            <li><strong>Ingen adgangskoder:</strong> Fordi vi ikke bruger adgangskoder, er der ingen adgangskoder for hackere at stjæle.</li>
+            <li><strong>Kryptering:</strong> Alle data krypteres under overførsel (HTTPS) og ved opbevaring.</li>
+            <li><strong>Opbevaring:</strong>
+                <ul>
+                    <li><strong>Aktive konti:</strong> Vi gemmer din e-mail og nøgle, så længe din konto er aktiv.</li>
+                    <li><strong>Slettede konti:</strong> Alle data slettes permanent 7 dage efter, at sletningen er bekræftet.</li>
+                    <li><strong>Finansielle optegnelser:</strong> Stripe opbevarer transaktionsdata i henhold til globale skatte- og hvidvasklove.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>5. Sletning af konto</h2>
+        <p>Du har "retten til at blive glemt". Du kan starte en permanent sletning af din konto direkte i appen (<strong>Profil -> Slet min konto</strong>).</p>
+
+        <ul>
+            <li><strong>7-dages fortrydelse:</strong> Dine data markeres til sletning. Du kan annullere dette inden for 7 dage.</li>
+            <li><strong>Permanent sletning:</strong> Efter 7 dage slettes din e-mail, enheds-ID og adgangsnøgle permanent og irreversibelt.</li>
+        </ul>
+
+        <h3>Annullering af sletningsanmodning</h3>
+        <ol>
+            <li>Åbn RE:LIBRE og gå til <strong>Profil</strong>.</li>
+            <li>Tryk på <strong>'Annuller sletningsanmodning'</strong> (vises kun, når sletning er i gang).</li>
+            <li>Din sletning annulleres øjeblikkeligt.</li>
+        </ol>
+
+        <h3>Manuel sletningsanmodning</h3>
+        <p>Hvis du ikke kan tilgå appen, kan du sende en e-mail til <strong>support@betterlifeus.org</strong> med emnet <strong>'RE:LIBRE - Anmodning om kontosletning'</strong>. Inkluder din e-mailadresse og adgangsnøgle. Vi behandler det inden for 24-48 timer.</p>
+
+        <h2>6. Juridisk overholdelse (Mindreårige)</h2>
+        <p>RE:LIBRE er ikke designet til brugere under 18 år. Vi indsamler ikke bevidst data fra børn under 18 år. Hvis en forælder opdager, at et barn under 18 har brugt appen, bedes de kontakte os straks for sletning af data.</p>
+
+        <h2>7. Dine rettigheder og sletning af data</h2>
+        <p>Under GDPR (bl.a. artikel 17) har du følgende rettigheder:</p>
+        <ul>
+            <li><strong>Adgang:</strong> Anmod om indsigt i, hvilke data vi har om dig.</li>
+            <li><strong>Sletning:</strong> Anmod om, at vi sletter dine data.</li>
+            <li><strong>Rettelse:</strong> Anmod om rettelse af unøjagtige data.</li>
+            <li><strong>Portabilitet:</strong> Modtag en kopi af dine data i et læsbart format.</li>
+            <li><strong>Tilbagetræk samtykke:</strong> Træk dit samtykke tilbage til enhver tid.</li>
+            <li><strong>Klage:</strong> Indsend en klage til Datatilsynet.</li>
+        </ul>
+        <p>Kontakt os på <strong>support@betterlifeus.org</strong> for at udøve disse rettigheder. Vi svarer inden for 24-48 timer.</p>
+
+        <h2>8. Sporing og identifikatorer</h2>
+        <p>RE:LIBRE bruger <strong>IKKE</strong> IDFA, AAID, cookies, web beacons eller databrokere. Vi bruger kun funktionelle identifikatorer (adgangsnøgle og session-tokens), som er nødvendige for tjenesten. Disse bruges aldrig til reklamer.</p>
+
+        <h2>9. Beskyttelse af følsom information</h2>
+        <ul>
+            <li>Vi gemmer ikke oplysninger om straffeattest, afhængighed, opholdsstatus eller flygtningestatus.</li>
+            <li>Adgangsnøgler er tilfældige strenge — de er ikke knyttet til din identitet.</li>
+            <li>Vi opretter ikke profiler baseret på din brug af appen.</li>
+            <li>Alle data behandles fortroligt og videregives kun, hvis det kræves ved lov.</li>
+        </ul>
+
+        <h2>10. Ændringer til denne politik</h2>
+        <p>Vi opdaterer denne politik, hvis appen ændres. Vi offentliggør den nye version og opdaterer datoen øverst. Fortsat brug af appen betyder, at du accepterer den nye politik.</p>
+
+        <h2>11. Kontakt os</h2>
+        <p><strong>RE:LIBRE</strong><br>
+        Email: <strong>support@betterlifeus.org</strong><br>
+        Inkluder venligst 'RE:LIBRE - Support' i emnefeltet. Vi svarer inden for 24-48 timer.</p>
+
+        <h2>12. Juridisk overholdelse</h2>
+        <h3>United States</h3>
+        <ul>
+            <li>COPPA, CCPA / CPRA, VCDPA og FTC Act Sektion 5.</li>
+        </ul>
+
+        <h3>Internationalt</h3>
+        <ul>
+            <li><strong>GDPR:</strong> For borgere i EU og Storbritannien.</li>
+            <li><strong>Databeskyttelsesloven (2023):</strong> Dansk lovgivning.</li>
+            <li><strong>FN’s Verdenserklæring om Menneskerettighederne:</strong> Artikel 12.</li>
+            <li><strong>FN’s Flygtningekonvention:</strong> Beskyttelse af flygtninge.</li>
+        </ul>
+        
+        <div class="footer">
+            <p><strong>RE:LIBRE er et produkt af BetterLifeUs LLC.</strong><br>
+            Tilgængelig på Engelsk og Dansk.<br>
+            © 2026 BetterLifeUs LLC. Alle rettigheder forbeholdes.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
